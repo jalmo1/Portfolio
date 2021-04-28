@@ -1,4 +1,3 @@
-# Portfolio
 
 ## Hi, my name is Joshua Almodovar
 
