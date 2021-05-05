@@ -7,6 +7,8 @@
   You can find:
   - Current projects I am working on 
   - Information about me
-  - <placeholder> 
-  - <placeholder>
+  - My hobbies 
+  - How to contact me
+
+
   
