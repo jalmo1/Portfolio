@@ -9,7 +9,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.5;
-    padding: 20px;
+    /*padding: 20px;*/
     font-family: fantasy;
     background: linear-gradient(to bottom, #9900cc 25%, #0000cc 100%);
     color: #fff;
@@ -22,6 +22,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #9900cc;
 }
 
 header .logo {
@@ -64,26 +68,6 @@ main h2 {
     margin: 100px 200px;
 }
 
-footer {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 100%;
-    padding: 40px 35px;
-  }
-
-footer {
-    margin: 0;
-    padding: 0;
-}
-
-  footer h2 {
-    color: #fff;
-    font-size: 30px;
-    margin: 0;
-    text-align: right;
-  }
-
 .about-info {
     margin: 20px 30px;
     padding: 5px 5px;
@@ -98,6 +82,7 @@ footer {
 }
 
 .about-info p {
+    font-size: 20px;
     display: flex;
     justify-content: right;
     flex-wrap: wrap;  
@@ -111,3 +96,39 @@ footer {
     width: 100%;
     height: auto;
 }
+
+.projects a {
+    display: block;
+    text-align: center;
+}
+
+.projects a img {
+    width: 600px;
+    height: auto;
+    border: 2px solid black;
+    
+}
+
+.projects a img:hover {
+    width: 650px;
+    height: auto;
+    border-radius: 35px;
+}
+
+.hobbies {
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 50px;
+    font-size: 32px;
+}
+
+.hobbies div {
+    display: flex;
+    justify-content: space-around;
+}
+
+.hobbies div ul {
+    display: flex;
+    flex-direction: column;
+}
+
