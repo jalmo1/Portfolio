@@ -1,4 +1,5 @@
 
+
 # Hi, my name is Joshua Almodovar
 
 ## Challenge description:
@@ -24,4 +25,4 @@
 https://jalmo1.github.io/Portfolio/
 
 #### Webpage screenshot:
-![Portfolio screen shot] (./assets/images/portfolio-screenshot.PNG)
+![portfolio-screenshot](https://user-images.githubusercontent.com/81341368/117581675-2249a200-b0cc-11eb-8482-da18f700e42d.PNG)
