@@ -24,16 +24,20 @@ header {
     align-items: center;
     position: absolute;
     top: 0;
-    width: 100%;
     background-color: #9900cc;
 }
 
-header .logo {
+header h1 {
     color: #fff;
     font-weight: bold;
     font-size: 25px;
     text-decoration: none;
     text-transform: uppercase;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: #fff;
 }
 
 header ul {
@@ -68,6 +72,10 @@ main h2 {
     margin: 100px 200px;
 }
 
+.section-title {
+    text-align: center;
+}
+
 .about-info {
     margin: 20px 30px;
     padding: 5px 5px;
@@ -100,44 +108,32 @@ main h2 {
 
 .projects a {
     display: block;
-    text-align: center;
 }
 
-.projects a img {
-    text-align: center;
-    width: 600px;
-    height: auto;
-    border: 2px solid black;
-    opacity: 92%;
-}
-
-.projects a img:hover {
+/*.projects a img:hover {
     width: 620px;
     height: auto;
     border-radius: 35px;
     opacity: 100%;
 }
-
-.container {
-    position: relative;
-    display: inline-block;  /*Make the width of box same as image */
-    margin-left: 225px;
+*/
+.placeholder {
+    display: flex;
+    justify-content: space-evenly;
 }
 
-.container .text {
-    position: absolute;
-    z-index: 999;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    top: 70%; /* Adjust this value to move the positioned div up and down */
-    text-align: center;
-    width: 60%; /* Set the width of the positioned div */
+.placeholder h3 {
+    font-size: 25px;
+    margin-top: 100px;
 }
 
-.text {
-    font-size: 50px;
-    background-color: #cc99ff;
+.placeholder a img {
+    width: 300px;
+    height: 250px;
+}
+
+.placeholder a img:hover {
+    width: 325px;
 }
 
 .hobbies {
@@ -171,11 +167,105 @@ main h2 {
     color: #cc66ff;
 }
 
+@media screen and (max-width: 900px) {
+    body {
+        background: linear-gradient(to bottom, #9900cc 35%, #0000cc 100%);
+    }
 
-@media screen and (max-width: 980px) {
     header {
         padding-bottom: 0;
         justify-content: center;
         position: relative;
-      } 
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    main h2 {
+        border-bottom: none;
+        text-align: center;
+    }
+
+    .section-title {
+        width: 80%;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .about-info {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    section {
+        padding: 30px 15px;
+      }
+
+      .about-info {
+        display: flexbox;
+        justify-content: space-around;
+        width: 100%;
+      }
+
+      .about-info img {
+          width: 250px;
+          height: auto;
+      }
+   
+      .placeholder h3 {
+       flex: 2 100%;
+       text-align: center;
+      }
+   
+      .placeholder {
+        flex: 2 100%;
+        text-align: center;
+        justify-content: center;
+      }
+   
+      .place-img {
+        flex: 0 32%;
+        margin-right: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+   
+      .img-name {
+        flex: 100%;
+      }
+}
+
+@media screen and (max-width: 425px) {
+    header {
+        font-size: 20px;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul li {
+        display: flexbox;
+        justify-content: space-evenly;
+        
+    }
+
 }
