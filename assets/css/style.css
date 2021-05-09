@@ -111,13 +111,6 @@ main h2 {
     display: block;
 }
 
-/*.projects a img:hover {
-    width: 620px;
-    height: auto;
-    border-radius: 35px;
-    opacity: 100%;
-}
-*/
 .placeholder {
     display: flex;
     justify-content: space-evenly;
