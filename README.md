@@ -19,3 +19,9 @@
   - The use of mediaqueries
   - Links to my projects
   - Various ways to contact me  
+
+#### Deployed webpage link:
+https://jalmo1.github.io/Portfolio/
+
+#### Webpage screenshot:
+![Portfolio screen shot] (./assets/images/portfolio-screenshot.PNG)
