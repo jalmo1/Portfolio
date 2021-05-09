@@ -22,6 +22,3 @@
 
 #### Deployed webpage link:
 https://jalmo1.github.io/Portfolio/
-
-#### Webpage screenshot:
-![Portfolio screen shot] (./assets/images/portfolio-screenshot.PNG)
