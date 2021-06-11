@@ -1,119 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Joshua Almodovar</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
-</head>
-<body>
-    <header>
-           <h1>
-                <a href="#">Joshua Almodovar</a>
-            </h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#about-me">About Me</a>
-                </li>
-                <li>
-                    <a href="#projects">Projects</a>
-                </li>
-                <li>
-                    <a href="#hobbies">Hobbies</a>
-                </li>
-                <li>
-                    <a href="#contact-info">Contact Info</a>
-                </li>
-            </ul>
+  </head>
+  <body>
+    <header class=" col 7">
+        <nav class="indigo lighten-2 nav">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo left">Joshua Almodovar</a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse right"><i class="material-icons">menu</i></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a id="about-me" href="#">About</a></li>
+                    <li><a id="projects" href="#">Projects</a></li>
+                    <li><a id="hobbies" href="#">Hobbies</a></li>
+                    <li><a id="contact" href="#">Contact</a></li>
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <li><a id="about-me" href="#">About</a></li>
+                    <li><a id="projects" href="#">Projects</a></li>
+                    <li><a id="profileMenu" href="#">Profile</a></li>
+                    <li><a id="contact" href="#">Contact</a></li>
+                </ul>
+            </div>
         </nav>
-        
     </header>
 
-        <main>
-            <section id="about-me" class="about-info">
-                <h2 class="section-title">About Me</h2>
-                <div class="flex-container">
-                    <img src="./assets/images/profile-pic2.jpg" alt="Joshua Almodovar headshot while wearing a mask">
-                    <p>
-                        Hello, my name is Josh. I am an aspiring full stack web developer, currently residing in Florida. If I'm not practicing my coding skills or working on projects, 
-                        you can usually catch me in a garage working on cars or walking around town snapping pics with my camera.
-                    </p>
-                </div>
-            </section>
-            
-            <section id="projects" class="projects">
-                <h2 class="section-title">Projects</h2>
-                <div class="placeholder">
-                    <div class="place-img" >
-                        <a target="_blank" rel="noopener noreferrer" href="https://jalmo1.github.io/run-buddy/">
-                            <img src="./assets/images/Run-Buddy-screenshot.PNG" alt="screenshot of Run Buddy project">
-                        </a>
-                    </div>
-                    <h3 class="img-name">Run Buddy</h3>
-                </div>
-                <div class="placeholder">
-                    <div class="place-img">
-                        <a href="https://placeholder.com">
-                            <img src="https://via.placeholder.com/150">
-                        </a>
-                    </div>
-                    <h3 class="img-name">Coming Soon</h3>
-                </div>
-                <div class="placeholder">
-                    <div class="place-img">
-                        <a href="https://placeholder.com">
-                            <img src="https://via.placeholder.com/150">
-                        </a>
-                    </div>
-                    <h3 class="img-name">Coming Soon</h3>
-                </div>
-                <div class="placeholder">
-                    <div class="place-img">
-                        <a href="https://placeholder.com">
-                            <img src="https://via.placeholder.com/150">
-                        </a>
-                    </div>
-                    <h3 class="img-name">Coming Soon</h3>
-                </div>
-            </section>
-            
-            <section id="hobbies" class="hobbies">
-                <h2 class="section-title">Hobbies</h2>
-                <div>
-                    <ul>
-                        <li>Producing music</li>
-                        <li>Photograpghy</li>
-                        <li>Coding</li>
-                    </ul>
-                    <ul>
-                        <li>Working on cars</li>
-                        <li>Racing (legally)</li>
-                        <li>Playing video games</li>
-                    </ul>
-                </div>
-            </section>
+    <main>
+      <section class="container about-info">
+        <h2 id="about-me" class="section-title indigo lighten-2">About Me</h2>
+        <div class="container row">
+          <div class="col l7">
+            <img
+              class="materialboxed"
+              width="auto"
+              height="300"
+              src="./assets/images/profile-pic2.jpg"
+              alt="Joshua Almodovar headshot while wearing a mask"
+            />
+          </div>
+          <div class="col l5 ">
+            <p id="about-text">
+              Hello, my name is Josh. I am an aspiring full stack web developer,
+              currently residing in Florida. If I'm not practicing my coding
+              skills or working on projects, you can usually catch me in a
+              garage working on cars or walking around town snapping pics with
+              my camera.
+            </p>
+          </div>
+        </div>
+      </section>
 
-            <section id="contact-info" class="contact-info">
-                <h2 class="section-title">Contact Info</h2>
-                <div class="contact">
-                    <p>
-                        Email: <a href="mailto:joshuarosamktp4@gmail.com">Joshuarosamktp4@gmail.com</a>
-                        <br>
-                        Instagram: <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/bushier_browsensei/">bushier_browsensei</a>
-                    </p>
-                    <p>
-                        LinkedIn: <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/joshua-almodovar-39359320a/">Josh's LinkedIn</a>
-                        <br>
-                        Github: <a target="_blank" rel="noopener noreferrer" href="https://github.com/jalmo1/jalmo1">Josh's Github</a>
-                    </p>
-                    <img src="./assets/images/bushier_browsensei_nametag.png" alt="instagram QR code"
-                        width="200px"
-                        height="auto">
-                </div>
-            </section>
-        </main>
-    </body>
+      <section id="projects" class="container projects">
+        <h2 class="section-title indigo lighten-2">Projects</h2>
+        <!-- First project -->
+        <div class="row">
+          <div class="col s6">
+            <div class="card">
+              <div class="card-image">
+                <img
+                  src="./assets/images/Run-Buddy-screenshot.PNG"
+                  alt="screenshot of Run Buddy project"
+                />
+                <span class="card-title">Run Buddy</span>
+              </div>
+              <div class="card-content">
+                <p>
+                    A website that offers fitness training services.
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </p>
+              </div>
+              <div class="card-action">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://jalmo1.github.io/run-buddy/"
+                >
+                  Run Buddy live link
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Second project -->
+          <div class="col s6">
+            <div class="card">
+              <div class="card-image">
+                <img src="./assets/images/dealsella-capture.PNG" />
+                <span class="card-title">DealSella</span>
+              </div>
+              <div class="card-content">
+                <p>
+                    DealSella is the app for finding the best prices for games. 
+                    There are two dropdown lists for genre and platform selection. 
+                    Once the options are selected and "Search Games" button is clicked, 
+                    a list of games on sale will be displayed. More details and prices from different 
+                    stores will be shown by clicking on a game from the list.
+                </p>
+              </div>
+              <div class="card-action">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://browntuckerr.github.io/SteamAPIproject/"
+                >
+                  DealSella live site
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Third project -->
+        <div class="row">
+          <div class="col s6">
+            <div class="card">
+              <div class="card-image">
+                <img src="https://via.placeholder.com/150" alt="placeholder" />
+                <span class="card-title"></span>
+              </div>
+              <div class="card-content">
+                <p></p>
+              </div>
+              <div class="card-action">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://placeholder.com"
+                >
+                  Coming Soon!
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- Fourth project -->
+          <div class="col s6">
+            <div class="card">
+              <div class="card-image">
+                <img src="https://via.placeholder.com/150" alt="placeholder" />
+                <span class="card-title"></span>
+              </div>
+              <div class="card-content">
+                <p></p>
+              </div>
+              <div class="card-action">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://placeholder.com"
+                >
+                  Coming Soon!
+                </a>
+              </div>
+            </div>
+        </div>
+      </section>
 
+      <section id="hobbies" class="container hobbies">
+        <h2 class="section-title indigo lighten-2">Hobbies</h2>
+        <div>
+          <ul>
+            <li>Producing music</li>
+            <li>Photograpghy</li>
+            <li>Coding</li>
+          </ul>
+          <ul>
+            <li>Working on cars</li>
+            <li>Racing (legally)</li>
+            <li>Playing video games</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contact-info" class="container contact-info">
+        <h2 class="section-title indigo lighten-2">Contact Info</h2>
+        <div class="contact">
+          <p>
+            Email:
+            <a href="mailto:joshuarosamktp4@gmail.com"
+              >Joshuarosamktp4@gmail.com</a
+            >
+            <br />
+            Instagram:
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.instagram.com/bushier_browsensei/"
+              >bushier_browsensei</a
+            >
+          </p>
+          <p>
+            LinkedIn:
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://www.linkedin.com/in/joshua-almodovar-39359320a/"
+              >Josh's LinkedIn</a
+            >
+            <br />
+            Github:
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href="https://github.com/jalmo1/jalmo1"
+              >Josh's Github</a
+            >
+          </p>
+          <img
+            src="./assets/images/bushier_browsensei_nametag.png"
+            alt="instagram QR code"
+            width="200px"
+            height="auto"
+          />
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./port.js"></script>
 </html>
